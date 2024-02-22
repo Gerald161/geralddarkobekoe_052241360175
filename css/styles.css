@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.landing_page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.landing_page nav, ul{
+    padding: 45px 0 5px 0;
+    margin:  0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: white 1px solid;
+}
+
+.landing_page nav a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.landing_page nav a:hover{
+    color: dodgerblue;
+}
+
+.landing_page nav a:nth-child(1){
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.landing_page nav a:nth-child(2){
+    font-size: 40px;
+}
+
+video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+ul{
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+ul a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+ul a:hover{
+    color: dodgerblue;
+}
+
+.landing_page h2{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+
+h3{
+    text-align: center;
+    padding: 20px;
+}
+
+.featured_meals{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-auto-rows: 220px;
+    grid-auto-flow: dense;
+    padding: 5px 0; 
+}
+
+.featured_meals .product{
+    position: relative;
+    transition: all 0.8s;
+    overflow: hidden;
+}
+
+.featured_meals .product img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.featured_vertical{
+    grid-row: span 2;   
+}
+
+.featured_meals .product .text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    /* transform: scaleY(0); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    transition: all 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+  
+.featured_meals .product .text h3{
+    text-shadow:0 0 10px;
+}
+  
+  /* .featured_meals .product:hover .text{
+    transform: scaleY(1);
+  } */
+  
+.featured_meals .product .text .textcontent{
+    padding: 15px;
+}
+
+.featured_meals .product:hover img{
+    transform: scale(1.2);
+}
+
+.heading_to_style{
+    color: rgb(1, 31, 91);
+    font-size: 2em;
+    margin: 50px 20px;
+}
+
+.some_info{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    padding: 5px 0; 
+}
+
+.some_info .big{
+    grid-row: span 2;
+    grid-column: span 2;
+    position: relative;
+}
+
+.some_info .long{
+    grid-column: span 2;
+    position: relative;
+}
+
+.some_info .gallery{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.some_info .big img, .some_info .gallery img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.8s;
+}
+
+.testimonials{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 300px;
+    grid-auto-flow: dense;
+    padding: 5px 0; 
+}
+
+.testimonials .testimonial{
+    position: relative;
+    transition: all 0.8s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* .testimonials .testimonial  */
+.textbox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.6s;;
+}
+
+.testimonials .testimonial .textbox .person{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.testimonials .testimonial .textbox .person img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: solid 2px dodgerblue;
+}
+
+.testimonials .testimonial .textbox p{
+    width: 80%;
+}
+
+.testimonials .testimonial:hover .textbox, .some_info .gallery:hover .textbox{
+    opacity: 1;
+}
+
+.testimonials .testimonial img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.testimonials .testimonial:hover img, .some_info .gallery:hover img{
+    transform: scale(1.2);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 10px;
+    background: #333;
+    color: white;
+}
+
+footer .foot{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+footer .foot a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+footer .foot a i{
+    color: white;
+    font-size: 1.5em;
+    transition: all 0.6s;
+}
+
+footer .foot a i:hover, footer .foot a:hover{
+    color: dodgerblue;
+}

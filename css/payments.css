@@ -1,0 +1,17 @@
+.main_container{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 20px;
+}
+
+.main_container select, button{
+    padding: 5px 15px;
+}
+
+input{
+    max-width: 250px;
+    font-size: 1em;
+}

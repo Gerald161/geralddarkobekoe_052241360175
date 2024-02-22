@@ -1,0 +1,18 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 60vh;
+    align-items: center;
+}
+
+.mainContainer a{
+    text-decoration: none;
+    transition: all 0.7s;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.mainContainer a:hover{
+    color: dodgerblue;
+}
