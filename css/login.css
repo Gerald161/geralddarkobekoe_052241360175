@@ -239,3 +239,29 @@ input.invalid + p{
         flex-direction: column;
     }
 }
+
+label img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+label i{
+  cursor: pointer;
+  font-size: 200px;
+}
+
+input[type='file']{
+  display: none;
+}
+
+.thumbnail_image_placeholder{
+  padding: 5px;  
+  height: 200px; 
+  width: 200px; 
+  border-radius: 20px; 
+  object-fit: cover;
+  display: none;
+  cursor: pointer;
+}

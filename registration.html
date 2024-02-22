@@ -9,6 +9,7 @@
     href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="shortcut icon" type="image/png" href="./images/virtual.png">
 	<title>Register</title>
 
@@ -80,6 +81,14 @@
 
           <input type="text" name="address" placeholder="Address" required>
           <p>Must be a valid address with at least 10 letters and max 25</p>
+
+          <label for="">Picture</label>
+
+          <label for="thumbnail">
+            <i class="fa-solid fa-image"></i>
+            <img class="thumbnail_image_placeholder" alt="Thumbnail"/>
+          </label>
+          <input id="thumbnail" type="file" accept="image/*" name="photo">
 
           <!-- <div style="display: flex; position: relative;">
             <div>
