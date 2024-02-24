@@ -2,7 +2,7 @@ var patterns = {
     studentNumber: /^[\d]{12}$/,
     phoneNumber: /^[\d]{10}$/,
     firstName: /^[A-Za-z\d\s]{2,25}$/,
-    address: /^[A-Za-z\d\s]{10,25}$/,
+    address: /^[A-Za-z\d\s-]{10,25}$/,
     lastName: /^[A-Za-z\d\s]{2,25}$/,
     // password: /^[\w]{8,20}$/,
     // email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/

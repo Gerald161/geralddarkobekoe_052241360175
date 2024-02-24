@@ -1,19 +1,23 @@
 var images = [
     {
         image: "./images/1.jpg",
-        name: "Joe"
+        name: "Joe",
+        avatar: "./images/fresh.jpg"
     },
     {
         image: "./images/2.jpg",
-        name: "Mama"
+        name: "Ariel",
+        avatar: "./images/jasmine.jpg"
     },
     {
         image: "./images/3.jpg",
-        name: "Chucky"
+        name: "Chun-Li",
+        avatar: "./images/jade.jpeg"
     },
     {
         image: "./images/4.jpg",
-        name: "Gee"
+        name: "Gee",
+        avatar: "./images/ruby.jpeg"
     },
 ];
 
@@ -26,7 +30,7 @@ images.forEach((image)=>{
         <div class="textbox">
             <h2>${image.name}</h2>
             <div class="person">
-                <img src="./images/fresh.jpg">
+                <img src=${image.avatar}>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Officia facilis aperiam a consequuntur beatae.</p>
