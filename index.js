@@ -12,12 +12,12 @@ var images = [
     {
         image: "./images/3.jpg",
         name: "Chun-Li",
-        avatar: "./images/jade.jpeg"
+        avatar: "./images/jade.jpg"
     },
     {
         image: "./images/4.jpg",
         name: "Gee",
-        avatar: "./images/ruby.jpeg"
+        avatar: "./images/ruby.jpg"
     },
 ];
 
